@@ -5,8 +5,9 @@ class Hash
     array = []
 
     arguments.each do |arg|
+      binding.pry
+
       animals.each do |k, v|
-        binding.pry
         if v == arg
           array << k
         end
