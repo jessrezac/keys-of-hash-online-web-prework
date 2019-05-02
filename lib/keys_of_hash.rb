@@ -6,7 +6,6 @@ class Hash
 
     arguments.each do |arg|
       self.each do |k, v|
-        binding.pry
 
         if v == arg
           array << k
