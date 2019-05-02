@@ -3,7 +3,11 @@ class Hash
     array = []
 
     arguments.each do |arg|
-      array << arg
+      animals.each do |k, v|
+        if v == arg
+          array << k
+        end
+      end
     end
 
     array
