@@ -5,7 +5,7 @@ class Hash
     array = []
 
     arguments.each do |arg|
-      Hash.each do |k, v|
+      self.each do |k, v|
         binding.pry
 
         if v == arg
