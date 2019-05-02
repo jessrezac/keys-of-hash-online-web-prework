@@ -1,9 +1,12 @@
+require 'pry'
+
 class Hash
   def keys_of(*arguments)
     array = []
 
     arguments.each do |arg|
       animals.each do |k, v|
+        binding.pry
         if v == arg
           array << k
         end
